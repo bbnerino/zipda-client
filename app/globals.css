@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 247, 247, 247;
+  --primary-color: #2e86f8;
+  --text-color: #000000;
+  --secondary-text: #333333;
+  --card-bg: #ffffff;
+  --button-color: #3995ff;
+  --button-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 모바일 디바이스에 맞춘 스타일 */
+@media (max-width: 428px) {
+  html {
+    font-size: 16px;
+  }
+}
