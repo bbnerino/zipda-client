@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "win-start": "node startscript.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop zipda-client",
+    "pm2:restart": "pm2 restart zipda-client",
+    "pm2:logs": "pm2 logs zipda-client"
   },
   "dependencies": {
     "next": "14.0.4",
@@ -16,7 +21,8 @@
     "react-icons": "^4.12.0",
     "react-kakao-maps-sdk": "^1.1.24",
     "jwt-decode": "^4.0.0",
-    "next-auth": "^4.24.5"
+    "next-auth": "^4.24.5",
+    "pm2": "^5.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",
