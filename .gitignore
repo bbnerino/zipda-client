@@ -16,6 +16,9 @@
 # misc
 .DS_Store
 *.pem
+*.xlsx
+*.xls
+*.csv
 
 # debug
 npm-debug.log*
@@ -31,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# document folder
+/document/부동산*
